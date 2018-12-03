@@ -6,25 +6,26 @@
 #    By: srafe <srafe@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/20 17:47:07 by srafe             #+#    #+#              #
-#    Updated: 2018/11/26 15:11:04 by srafe            ###   ########.fr        #
+#    Updated: 2018/12/03 15:03:34 by srafe            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS = -c -Wall -Wextra -Werror
-SRCS = srcs/*.c
-INCLD = includes
+CFLAGS = -Wall -Wextra -Werror -I. -c
+FILES = *.c \
+		*.h
 NAME = libft.a
+OBJ	= *.o
 
+all: $(NAME)
 
-all: compile clean
+$(NAME): $(OBJ)
+		ar rcs $(NAME) $(OBJ)
 
-compile: clean
-		gcc -I $(INCLD) $(CFLAGS) $(SRCS) 
-		ar rc $(NAME) *.o
-		ranlib $(NAME)
+$(OBJ): $(FILES)
+		gcc $(CFLAGS) $(FILES)
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
