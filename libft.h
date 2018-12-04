@@ -6,7 +6,7 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 15:14:14 by srafe             #+#    #+#             */
-/*   Updated: 2018/12/03 17:44:08 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/04 16:16:28 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void				ft_strclr(char *s);
 int					ft_strcmp(const char *str1, const char *str2);
 char				*ft_strcpy(char *dest, const char *src);
 void				ft_strdel(char **as);
-char				*ft_strdup(char *str);
+char				*ft_strdup(const char *str);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strndup(const char *s, size_t n);

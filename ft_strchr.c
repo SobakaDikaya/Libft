@@ -6,7 +6,7 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 16:57:54 by srafe             #+#    #+#             */
-/*   Updated: 2018/12/03 13:03:20 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/04 16:09:47 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *str, int ch)
 
 	i = 0;
 	s = (char *)str;
-	while (s[i] != ch)
+	while (s[i] != (char)ch)
 	{
 		if (s[i] == '\0')
 		{

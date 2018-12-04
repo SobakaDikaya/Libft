@@ -6,7 +6,7 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 19:40:56 by srafe             #+#    #+#             */
-/*   Updated: 2018/12/03 13:04:26 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/04 16:13:42 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 char	*ft_strnew(size_t size)
 {
+	if (size > (size_t)-1)
+		return (NULL);
 	return ((char *)ft_memalloc(size + 1));
 }

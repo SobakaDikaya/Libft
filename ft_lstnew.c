@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/03 13:29:38 by srafe             #+#    #+#             */
-/*   Updated: 2018/12/03 13:37:16 by srafe            ###   ########.fr       */
+/*   Created: 2018/12/04 12:10:03 by srafe             #+#    #+#             */
+/*   Updated: 2018/12/04 12:24:13 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	t_list	*new;
+	t_list *new;
 
 	if (!(new = (t_list *)malloc(sizeof(t_list))))
 		return (NULL);
