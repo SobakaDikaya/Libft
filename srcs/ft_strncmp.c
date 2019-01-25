@@ -6,24 +6,19 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 13:07:46 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/27 16:03:16 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:04:10 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
-int	ft_strncmp(const char *str1, const char *str2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int i;
-
-	i = 0;
-	while (str1[i] != '\0' && str2[i] != '\0' && n)
+	while (n && *s1 && (*s1 == *s2))
 	{
-		if (str1[i] == str2[i])
-			i++;
-		else
-			break ;
+		s1++;
+		s2++;
 		n--;
 	}
-	return ((const unsigned char)str1[i] - (const unsigned char)str2[i]);
+	return (n) ? (*(const unsigned char *)s1 - *(const unsigned char *)s2) : 0;
 }

@@ -6,17 +6,17 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 13:11:09 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/27 17:20:44 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:01:44 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	unsigned long	i;
-	unsigned long	j;
-	int				k;
+	long int	i;
+	long int	j;
+	int			k;
 
 	i = 0;
 	j = 0;
@@ -30,8 +30,6 @@ int		ft_atoi(const char *str)
 		i++;
 	while (str[i] != '\0' && str[i] > 47 && str[i] < 58)
 		j = (j * 10) + (str[i++] - 48);
-	if (j > 2147483648)
-		return (-1);
 	j = j * (long)k;
 	return ((int)j);
 }

@@ -6,11 +6,11 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 17:52:37 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/26 12:36:53 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:04:46 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 char	*ft_strstr(const char *src1, const char *src2)
 {

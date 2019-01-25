@@ -6,20 +6,18 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/22 17:57:54 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/22 18:03:27 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 17:14:13 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-#include <stdio.h>  // Для printf
-#include <string.h> // Для strlen
+#include "libft.h"
 
-int		ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while(str[i] !='\0')
+	while (str[i] != '\0')
 		i++;
 	return (i);
 }

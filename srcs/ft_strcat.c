@@ -6,11 +6,11 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 13:34:37 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/23 15:14:11 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:03:17 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 char	*ft_strcat(char *dest, const char *append)
 {
@@ -18,9 +18,7 @@ char	*ft_strcat(char *dest, const char *append)
 	int j;
 
 	j = 0;
-	i = 0;
-	while (dest[i] != '\0')
-		i++;
+	i = ft_strlen(dest);
 	while (append[j] != '\0')
 	{
 		dest[i + j] = append[j];

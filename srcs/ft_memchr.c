@@ -6,15 +6,13 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/22 16:42:10 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/26 17:59:25 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:02:31 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>  //Для printf
-#include <string.h>   //Для memchr
-#include "ft_libft.h"
+#include "libft.h"
 
-void					*ft_memchr(const void *arr, int c, size_t n)
+void	*ft_memchr(const void *arr, int c, size_t n)
 {
 	const unsigned char	*buf;
 	size_t				i;

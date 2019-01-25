@@ -6,11 +6,11 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 13:32:19 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/26 18:56:42 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:01:58 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 int	ft_isalpha(int a)
 {

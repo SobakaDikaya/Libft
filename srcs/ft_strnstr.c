@@ -6,29 +6,33 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 12:34:42 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/27 14:40:25 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 18:11:24 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 char	*ft_strnstr(const char *src, const char *find, size_t n)
 {
 	size_t	i;
 	size_t	j;
 
-	if (find[0] == '\0')
-		return ((char *)&src[0]);
+	if (ft_strlen((char *)find) == 0)
+		return ((char *)src);
 	i = 0;
 	j = 0;
-	while (src[i] != '\0' && find[j] != '\0' && n--)
+	while (*src && i < n)
 	{
-		if (src[i] == find[j])
-			j++;
-		else
-			j = 0;
-		if (find[j] == '\0' && j != 0)
-			return ((char *)&src[i - j + 1]);
+		j = 0;
+		if (*src == find[j])
+		{
+			while (find[j] && find[j] == *(src + j)
+				&& i + j < n)
+				j++;
+			if (find[j] == '\0')
+				return ((char *)src);
+		}
+		src++;
 		i++;
 	}
 	return (NULL);

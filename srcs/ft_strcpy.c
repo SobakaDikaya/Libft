@@ -6,11 +6,11 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 12:57:28 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/26 19:09:52 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:03:29 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 char	*ft_strcpy(char *dest, const char *src)
 {

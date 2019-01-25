@@ -6,11 +6,11 @@
 /*   By: srafe <srafe@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 14:17:57 by srafe             #+#    #+#             */
-/*   Updated: 2018/11/26 18:58:48 by srafe            ###   ########.fr       */
+/*   Updated: 2018/12/03 13:02:08 by srafe            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
+#include "libft.h"
 
 int	ft_isprint(int a)
 {
